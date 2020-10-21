@@ -7,18 +7,19 @@ class App extends Component {
   }
 
   render() {
-    const handleClick = function () {
-      const text =
-        "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy";
-      return text;
-    };
     return (
       <div id="main">
-        <button id="click" onClick={handleClick}>
+        <button
+          id="click"
+          onClick={() => (
+            <p>
+              Hello, I've learnt to use the full-stack evaluation tool. This
+              makes me so happy
+            </p>
+          )}
+        >
           Click Me
         </button>
-        {this.text}
-        {/* Do not remove this main div!! */}
       </div>
     );
   }

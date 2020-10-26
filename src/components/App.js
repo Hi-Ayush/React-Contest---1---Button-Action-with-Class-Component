@@ -5,26 +5,23 @@ class App extends Component {
   constructor(props) {
     super(props);
   }
-  state = {
-    text: ""
-  };
-  handleClick = () => {
-    this.setState({
-      text:
-        "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"
-    });
-    // return this.state.text;
-  };
+
   render() {
     return (
       <div id="main">
-        <button id="click" onClick={this.handleClick}>
+        <button
+          id="click"
+          onClick={() => (
+            <p>
+              Hello, I've learnt to use the full-stack evaluation tool. This
+              makes me so happy
+            </p>
+          )}
+        >
           Click Me
         </button>
-        <p>{this.state.text}</p>
       </div>
     );
   }
 }
-
 export default App;

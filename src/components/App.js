@@ -2,8 +2,8 @@ import React, { Component, useState } from "react";
 import "../styles/App.css";
 
 class App extends Component {
-  Constructor() {
-    super();
+  Constructor(props) {
+    super(props);
   }
   state = {
     text: ""

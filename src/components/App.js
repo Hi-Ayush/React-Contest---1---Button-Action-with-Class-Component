@@ -7,12 +7,12 @@ class App extends Component {
     this.state = {
       isRenderPara: false
     };
-    // this.handleClick = this.handleClick.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick = () => {
+  handleClick() {
     this.setState({ isRenderPara: true });
-  };
+  }
 
   render() {
     return (
